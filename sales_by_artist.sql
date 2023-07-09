@@ -15,4 +15,4 @@ select
     , coalesce(ap.Revenue, 0) as Revenue
 from artists a
 left join artist_purchases ap on a.artistid = ap.artistid
-order by ap.Quantity desc;
+order by ap.Revenue desc;
